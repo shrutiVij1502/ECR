@@ -35,7 +35,7 @@ vim Dockerfile
 
 write this content in the Dockerfile 
 
-Now to run and build the images , use the following commands 
+Now to run and build the image , use the following commands 
 
 ```
 docker build -t awsimage1:v1 .
@@ -45,6 +45,8 @@ check the image and the running containers by these commands, respectively
 docker images
 docker ps
 ```
+<img width="622" alt="image" src="https://user-images.githubusercontent.com/67600604/206119945-ad515d26-25d4-4821-a79d-984c9cae7f21.png">
+
 
 Our Image is now created
 
@@ -87,6 +89,13 @@ Now, our image has been pushed into the repository
 Go to the ECR -> Repositories -> <Your Repository name>
 
 <img width="743" alt="image" src="https://user-images.githubusercontent.com/67600604/206119177-e7842b7b-29b4-4956-85da-ef9c85de32d4.png">
+  
+And, we can pull the Image using the command 
+  
+```
+docker pull 655645242246.dkr.ecr.ap-south-1.amazonaws.com/shruti-test1:latest
+```
+
 
 
 
